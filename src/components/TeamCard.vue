@@ -25,14 +25,7 @@ function inisial(nama) {
  padding: 28px 20px;
  background: #fff;
  border: 1px solid var(--border);
- border-radius: var(--radius);
- box-shadow: var(--shadow);
  text-align: center;
- transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.team-card:hover {
- transform: translateY(-5px);
- box-shadow: var(--shadow-hover);
 }
 .avatar {
  width: 84px;

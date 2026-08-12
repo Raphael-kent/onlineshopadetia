@@ -97,29 +97,26 @@ img {
 }
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 22px;
-  border: none;
-  border-radius: 999px;
-  background: var(--accent);
-  color: #fff;
-  font-family: inherit;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ padding: 10px 22px;
+ border: none;
+ border-radius: 8px;
+ background: var(--accent);
+ color: #fff;
+ font-family: inherit;
+ font-size: 0.95rem;
+ font-weight: 600;
+ cursor: pointer;
 }
 
 .btn:hover {
-  background: var(--accent-dark);
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.28);
-  transform: translateY(-1px);
+ background: var(--accent-dark);
 }
 
 .btn:active {
-  transform: translateY(0);
+ transform: translateY(1px);
 }
 
 @media (prefers-reduced-motion: reduce) {

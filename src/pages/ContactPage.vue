@@ -2,8 +2,8 @@
  <main class="page">
   <div class="container">
    <section class="head">
-    <h1>Kontak Kami</h1>
-    <p>Hubungi kami jika ada pertanyaan.</p>
+     <h1>Kontak Kami</h1>
+     <p>Hubungi kami klo ada tanya.</p>
    </section>
    <section class="layout">
     <div class="info">
@@ -31,7 +31,7 @@
      </div>
     </div>
     <form class="form" @submit.prevent>
-     <h2>Kirim Pesan</h2>
+      <h2>Krm Pesan</h2>
      <label for="nama">Nama</label>
      <input id="nama" type="text" placeholder="Nama kamu" />
      <label for="email">Email</label>
@@ -56,7 +56,6 @@
  padding: 28px;
  background: var(--bg-soft);
  border: 1px solid var(--border);
- border-radius: var(--radius);
 }
 .item {
  display: flex;
@@ -69,8 +68,6 @@
  flex: 1.2;
  padding: 28px;
  background: #fff;
- border-radius: var(--radius);
- box-shadow: var(--shadow);
 }
 .form h2 { margin-bottom: 8px; }
 label {
@@ -84,22 +81,19 @@ textarea {
  width: 100%;
  padding: 10px 14px;
  border: 1px solid var(--border);
- border-radius: 10px;
+ border-radius: 6px;
  font-family: inherit;
  font-size: 0.95rem;
- transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 input:focus,
 textarea:focus {
  outline: none;
  border-color: var(--accent);
- box-shadow: 0 0 0 3px var(--accent-soft);
 }
 .form .btn {
  width: 100%;
  margin-top: 18px;
  justify-content: center;
- border-radius: 999px;
 }
 @media (max-width: 768px) {
  .layout { flex-direction: column; }

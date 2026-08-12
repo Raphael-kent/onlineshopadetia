@@ -11,7 +11,7 @@ function tutupPreview() {
 function tambahKeKeranjang(nama) {
  const suara = new Audio('/audio/notifikasi.mp3')
  suara.play().catch(() => {})
- alert(`${nama} ditambahkan ke keranjang!`)
+  alert(`${nama} masuk krnjng!`)
 }
 </script>
 <template>
@@ -21,7 +21,7 @@ function tambahKeKeranjang(nama) {
   </div>
   <h3>{{ nama }}</h3>
   <p class="harga">Rp {{ harga.toLocaleString('id-ID') }}</p>
-  <button @click="tambahKeKeranjang(nama)">Tambah ke Keranjang</button>
+  <button @click="tambahKeKeranjang(nama)">Msk ke Krnjng</button>
  </div>
  <div v-if="gambarDipilih" class="preview-overlay" @click="tutupPreview">
   <img :src="gambarDipilih" class="preview-besar" />
@@ -32,19 +32,11 @@ function tambahKeKeranjang(nama) {
  width: 100%;
  max-width: 260px;
  border: 1px solid var(--border);
- border-radius: var(--radius);
  background: #fff;
  padding: 14px;
  text-align: center;
- transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card:hover {
- transform: translateY(-4px);
- box-shadow: var(--shadow-hover);
 }
 .img-wrap {
- border-radius: 10px;
- overflow: hidden;
  background: var(--bg-soft);
  margin-bottom: 12px;
 }
@@ -67,17 +59,15 @@ button {
  width: 100%;
  padding: 10px 0;
  border: none;
- border-radius: 999px;
+ border-radius: 6px;
  background: var(--accent);
  color: #fff;
  font-family: inherit;
  font-size: 0.92rem;
  font-weight: 600;
  cursor: pointer;
- transition: background 0.2s ease, transform 0.15s ease;
 }
 button:hover { background: var(--accent-dark); }
-button:active { transform: scale(0.98); }
 .preview-overlay {
  position: fixed;
  inset: 0;

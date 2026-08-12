@@ -11,19 +11,19 @@ const tim = [
  <main class="page">
   <div class="container">
    <section class="banner">
-    <h1>Tentang Kami</h1>
-    <p>Mengenal lebih dekat Onlineshop Sekolah kami.</p>
+      <h1>Tntg Kami</h1>
+      <p>Yuk kenalan sma toko online skul kami.</p>
    </section>
 
    <section class="cerita">
     <div class="teks">
-     <h2>Cerita Kami</h2>
-     <p>Onlineshop Sekolah lahir dari semangat siswa SMK Yadika Soreang jurusan PPLG untuk membuat belanja kebutuhan sekolah jadi lebih mudah.</p>
-     <p>Kami merancang, mengelola, dan terus mengembangkan toko ini bersama, agar teman-teman bisa berbelanja dengan nyaman, aman, dan cepat.</p>
+     <h2>Crta Kami</h2>
+     <p>Toko online ini dibuat siswa PPLG SMK Yadika Soreang, biar belanja makin gampang.</p>
+     <p>Kami kerjakan bareng-bareng, biar teman-teman nyaman &amp; aman belanjanya.</p>
     </div>
     <div class="gambar">
      <span class="emoji">🏫</span>
-     <p>Kami Bekerja di Sini</p>
+     <p>Kami Krja di Sini</p>
     </div>
    </section>
 
@@ -45,8 +45,7 @@ const tim = [
 .banner {
  padding: 48px 24px;
  text-align: center;
- border-radius: var(--radius);
- background: linear-gradient(135deg, #e0e7ff 0%, #fce7f3 100%);
+ background: var(--bg-soft);
 }
 .banner p { margin-top: 4px; }
 .cerita {
@@ -63,8 +62,6 @@ const tim = [
  display: grid;
  place-items: center;
  background: var(--bg-soft);
- border: 1px dashed var(--border);
- border-radius: var(--radius);
 }
 .gambar .emoji { font-size: 4rem; }
 .tim {

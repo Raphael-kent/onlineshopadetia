@@ -13,8 +13,8 @@ const daftarProduk = [
  <main class="page">
   <div class="container">
    <header class="head">
-    <h1>Produk Kami</h1>
-    <p>Pilih seragam dan perlengkapan sekolahmu.</p>
+     <h1>Prdk Kami</h1>
+     <p>Pilih srgm &amp; perlengkapan skulmu.</p>
    </header>
    <div class="grid">
     <ProductCard

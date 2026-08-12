@@ -4,8 +4,8 @@ const tahun = new Date().getFullYear()
 <template>
  <footer class="footer">
   <div class="container footer-inner">
-   <p class="muted">&copy; {{ tahun }} SMK Yadika Soreang &mdash; Onlineshop Sekolah</p>
-   <p class="muted small">Dikelola oleh siswa jurusan PPLG</p>
+    <p class="muted">&copy; {{ tahun }} SMK Yadika Soreang &mdash; Toko Online Skul</p>
+    <p class="muted small">Dibuat siswa PPLG</p>
   </div>
  </footer>
 </template>
