@@ -1,10 +1,23 @@
+<script setup>
+import { ref } from 'vue'
+
+const nama = ref('')
+const email = ref('')
+const pesan = ref('')
+
+function kirimPesan() {
+ alert(`Terima kasih, ${nama.value || 'teman'}! Pesanmu sudah dikirim.`)
+}
+</script>
 <template>
  <main class="page">
+  <section class="page-header">
+   <div class="container">
+    <h1>Hubungi Kami</h1>
+   </div>
+  </section>
+
   <div class="container">
-   <section class="head">
-     <h1>Kontak Kami</h1>
-     <p>Hubungi kami klo ada tanya.</p>
-   </section>
    <section class="layout">
     <div class="info">
      <h2>Info Kontak</h2>
@@ -12,62 +25,80 @@
       <span>📍</span>
       <div>
        <strong>Alamat</strong>
-       <p>SMK Yadika Soreang, Jalan Raya Soreang No. 12</p>
+       <p>Jl. Pendidikan No. 1, Soreang, Kab. Bandung</p>
       </div>
      </div>
      <div class="item">
       <span>📞</span>
       <div>
        <strong>Telepon</strong>
-       <p>(022) 1234567</p>
+       <p>(022) 123-4567</p>
       </div>
      </div>
      <div class="item">
       <span>✉️</span>
       <div>
        <strong>Email</strong>
-       <p><a href="mailto:onlineshop@sekolah.com">onlineshop@sekolah.com</a></p>
+       <p>smk-yadika@soreang.sch.id</p>
       </div>
      </div>
     </div>
-    <form class="form" @submit.prevent>
-      <h2>Krm Pesan</h2>
+
+    <form class="form" @submit.prevent="kirimPesan">
+     <h2>Kirim Pesan</h2>
      <label for="nama">Nama</label>
-     <input id="nama" type="text" placeholder="Nama kamu" />
+     <input id="nama" v-model="nama" type="text" placeholder="Nama kamu" />
      <label for="email">Email</label>
-     <input id="email" type="email" placeholder="email@contoh.com" />
+     <input id="email" v-model="email" type="email" placeholder="email@contoh.com" />
      <label for="pesan">Pesan</label>
-     <textarea id="pesan" rows="5" placeholder="Tulis pesanmu di sini..."></textarea>
-     <button type="submit" class="btn">Kirim</button>
+     <textarea id="pesan" v-model="pesan" rows="5" placeholder="Tulis pesan..."></textarea>
+     <button type="submit" class="btn-pill-solid">Kirim</button>
     </form>
    </section>
   </div>
  </main>
 </template>
 <style scoped>
-.head { margin-bottom: 32px; }
+.page {
+ padding: 0 0 80px;
+}
+.page-header {
+ background: var(--gradient-header);
+ color: #fff;
+ text-align: center;
+ padding: 64px 20px;
+}
+.page-header h1 {
+ color: #fff;
+ font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
 .layout {
  display: flex;
  gap: 40px;
  align-items: flex-start;
+ margin-top: 64px;
 }
 .info {
  flex: 1;
  padding: 28px;
  background: var(--bg-soft);
- border: 1px solid var(--border);
+ border-radius: var(--radius);
 }
+.info h2 { margin-bottom: 8px; }
 .item {
  display: flex;
  gap: 14px;
- margin-top: 18px;
+ margin-top: 22px;
 }
 .item > span { font-size: 1.5rem; }
+.item strong { display: block; }
 .item p { margin-top: 2px; }
 .form {
- flex: 1.2;
+ flex: 1;
  padding: 28px;
  background: #fff;
+ border-radius: var(--radius);
+ box-shadow: var(--shadow);
 }
 .form h2 { margin-bottom: 8px; }
 label {
@@ -79,23 +110,28 @@ label {
 input,
 textarea {
  width: 100%;
- padding: 10px 14px;
+ padding: 12px 14px;
  border: 1px solid var(--border);
- border-radius: 6px;
+ border-radius: 10px;
  font-family: inherit;
  font-size: 0.95rem;
+ background: var(--bg-soft);
+ transition: border-color 0.2s ease, background 0.2s ease;
 }
 input:focus,
 textarea:focus {
  outline: none;
  border-color: var(--accent);
+ background: #fff;
 }
-.form .btn {
+textarea {
+ resize: vertical;
+}
+.btn-pill-solid {
  width: 100%;
- margin-top: 18px;
- justify-content: center;
+ margin-top: 20px;
 }
 @media (max-width: 768px) {
- .layout { flex-direction: column; }
+ .layout { flex-direction: column; gap: 24px; }
 }
 </style>

@@ -1,29 +1,30 @@
 <script setup>
 import TeamCard from '../components/TeamCard.vue'
-const tim = [
- { id: 1, nama: 'Andi', jabatan: 'Ketua' },
- { id: 2, nama: 'Budi', jabatan: 'Programmer' },
- { id: 3, nama: 'Citra', jabatan: 'Designer' },
- { id: 4, nama: 'Dina', jabatan: 'Bendahara' },
+
+const daftarTim = [
+ { id: 1, nama: 'Andi', jabatan: 'Ketua Tim', inisial: 'A' },
+ { id: 2, nama: 'Budi', jabatan: 'Desain UI & UX', inisial: 'B' },
+ { id: 3, nama: 'Citra', jabatan: 'Programmer', inisial: 'C' },
+ { id: 4, nama: 'Dina', jabatan: 'Bendahara', inisial: 'D' },
 ]
 </script>
 <template>
  <main class="page">
-  <div class="container">
-   <section class="banner">
-      <h1>Tntg Kami</h1>
-      <p>Yuk kenalan sma toko online skul kami.</p>
-   </section>
+  <section class="page-header">
+   <div class="container">
+    <h1>Tentang Kami</h1>
+   </div>
+  </section>
 
+  <div class="container">
    <section class="cerita">
     <div class="teks">
-     <h2>Crta Kami</h2>
-     <p>Toko online ini dibuat siswa PPLG SMK Yadika Soreang, biar belanja makin gampang.</p>
-     <p>Kami kerjakan bareng-bareng, biar teman-teman nyaman &amp; aman belanjanya.</p>
+     <h2>Cerita Kami</h2>
+     <p>Onlineshop ini dikelola langsung oleh siswa SMK Yadika Soreang jurusan PPLG, sebagai proyek belajar sekaligus mengembangkan keterampilan membuat dan mengelola perlengkapan sekolah dengan mudah dan harga terjangkau.</p>
+     <p>Setiap produk dipilih dan dikelola oleh tim siswa, mulai dari penentuan bahan, harga, sampai layanan pengambilan di koperasi sekolah. Dengan begitu, kualitas dan harganya tetap terjaga untuk teman-teman semua.</p>
     </div>
     <div class="gambar">
-     <span class="emoji">🏫</span>
-     <p>Kami Krja di Sini</p>
+     <p>[Foto / ilustrasi toko]</p>
     </div>
    </section>
 
@@ -31,10 +32,11 @@ const tim = [
     <h2>Tim Kami</h2>
     <div class="anggota">
      <TeamCard
-      v-for="orang in tim"
+      v-for="orang in daftarTim"
       :key="orang.id"
       :nama="orang.nama"
       :jabatan="orang.jabatan"
+      :inisial="orang.inisial"
      />
     </div>
    </section>
@@ -42,30 +44,41 @@ const tim = [
  </main>
 </template>
 <style scoped>
-.banner {
- padding: 48px 24px;
- text-align: center;
- background: var(--bg-soft);
+.page {
+ padding: 0 0 80px;
 }
-.banner p { margin-top: 4px; }
+.page-header {
+ background: var(--gradient-header);
+ color: #fff;
+ text-align: center;
+ padding: 64px 20px;
+}
+.page-header h1 {
+ color: #fff;
+ font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
 .cerita {
  display: flex;
  align-items: center;
  gap: 40px;
- margin-top: 56px;
+ margin-top: 64px;
 }
 .teks { flex: 1; }
-.teks p { margin-top: 10px; }
+.teks h2 { margin-bottom: 16px; }
+.teks p { margin-top: 12px; }
 .gambar {
  flex: 1;
- padding: 56px 24px;
+ min-height: 300px;
  display: grid;
  place-items: center;
  background: var(--bg-soft);
+ border: 2px dashed var(--border);
+ border-radius: var(--radius);
+ color: var(--text-muted);
+ font-weight: 600;
 }
-.gambar .emoji { font-size: 4rem; }
 .tim {
- margin-top: 56px;
+ margin-top: 64px;
  text-align: center;
 }
 .tim h2 { margin-bottom: 24px; }
@@ -75,11 +88,8 @@ const tim = [
  flex-wrap: wrap;
  justify-content: center;
 }
-.anggota :deep(.team-card) {
- flex: 1 1 200px;
- max-width: 240px;
-}
 @media (max-width: 768px) {
- .cerita { flex-direction: column; }
+ .cerita { flex-direction: column; gap: 24px; }
+ .gambar { min-height: 220px; }
 }
 </style>

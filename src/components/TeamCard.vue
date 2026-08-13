@@ -1,31 +1,27 @@
 <script setup>
-defineProps({
- nama: { type: String, required: true },
- jabatan: { type: String, required: true },
-})
-function inisial(nama) {
- return nama
-  .trim()
-  .split(' ')
-  .map((kata) => kata[0])
-  .slice(0, 2)
-  .join('')
-  .toUpperCase()
-}
+defineProps(['nama', 'jabatan', 'inisial'])
 </script>
 <template>
  <div class="team-card">
-  <div class="avatar">{{ inisial(nama) }}</div>
+  <div class="avatar">{{ inisial }}</div>
   <h3>{{ nama }}</h3>
   <p class="jabatan">{{ jabatan }}</p>
  </div>
 </template>
 <style scoped>
 .team-card {
+ flex: 1 1 200px;
+ max-width: 240px;
  padding: 28px 20px;
  background: #fff;
- border: 1px solid var(--border);
+ border-radius: var(--radius);
+ box-shadow: var(--shadow);
  text-align: center;
+ transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.team-card:hover {
+ transform: translateY(-4px);
+ box-shadow: var(--shadow-hover);
 }
 .avatar {
  width: 84px;
@@ -34,8 +30,8 @@ function inisial(nama) {
  display: grid;
  place-items: center;
  border-radius: 50%;
- background: var(--accent-soft);
- color: var(--accent);
+ background: var(--gradient-hero);
+ color: #fff;
  font-size: 1.6rem;
  font-weight: 700;
 }

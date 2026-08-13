@@ -1,11 +1,7 @@
-<script setup>
-const tahun = new Date().getFullYear()
-</script>
 <template>
  <footer class="footer">
   <div class="container footer-inner">
-    <p class="muted">&copy; {{ tahun }} SMK Yadika Soreang &mdash; Toko Online Skul</p>
-    <p class="muted small">Dibuat siswa PPLG</p>
+   <p class="muted">&copy; 2026 SMK Yadika Soreang &mdash; Onlineshop</p>
   </div>
  </footer>
 </template>
@@ -27,5 +23,4 @@ const tahun = new Date().getFullYear()
  color: var(--text-muted);
  font-size: 0.92rem;
 }
-.small { font-size: 0.85rem; }
 </style>
