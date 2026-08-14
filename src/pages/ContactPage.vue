@@ -25,14 +25,14 @@ function kirimPesan() {
       <span>📍</span>
       <div>
        <strong>Alamat</strong>
-       <p>Jl. Pendidikan No. 1, Soreang, Kab. Bandung</p>
+       <p>Jl.SOREANG NI BOSSS</p>
       </div>
      </div>
      <div class="item">
       <span>📞</span>
       <div>
        <strong>Telepon</strong>
-       <p>(022) 123-4567</p>
+       <p>(+62) 821wkwkwkk</p>
       </div>
      </div>
      <div class="item">

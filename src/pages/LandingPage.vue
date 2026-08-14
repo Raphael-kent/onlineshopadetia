@@ -30,6 +30,16 @@ const fitur = [
     </div>
    </div>
   </section>
+
+  <section class="video-promo">
+   <div class="container">
+    <h2>Video Promo</h2>
+    <video controls muted loop autoplay playsinline class="promo">
+     <source src="/video/promo-toko.mp4" type="video/mp4" />
+     Maaf, browser kamu tidak mendukung video.
+    </video>
+   </div>
+  </section>
  </main>
 </template>
 <style scoped>
@@ -88,6 +98,22 @@ const fitur = [
 }
 .card p {
  font-size: 0.95rem;
+}
+.video-promo {
+ padding: 24px 0 64px;
+ text-align: center;
+}
+.video-promo h2 {
+ margin-bottom: 20px;
+}
+.promo {
+ display: block;
+ width: 100%;
+ max-width: 720px;
+ margin: 0 auto;
+ border-radius: var(--radius);
+ box-shadow: var(--shadow);
+ background: #000;
 }
 @media (max-width: 640px) {
  .hero { padding: 72px 20px; }

@@ -2,10 +2,10 @@
 import TeamCard from '../components/TeamCard.vue'
 
 const daftarTim = [
- { id: 1, nama: 'Andi', jabatan: 'Ketua Tim', inisial: 'A' },
- { id: 2, nama: 'Budi', jabatan: 'Desain UI & UX', inisial: 'B' },
- { id: 3, nama: 'Citra', jabatan: 'Programmer', inisial: 'C' },
- { id: 4, nama: 'Dina', jabatan: 'Bendahara', inisial: 'D' },
+ { id: 1, nama: 'Mira', jabatan: 'bro nya budi', inisial: 'M' },
+ { id: 2, nama: 'Budi', jabatan: 'bro nya mira', inisial: 'B' },
+ { id: 3, nama: 'Mirra', jabatan: 'bro nya buddi', inisial: 'I' },
+ { id: 4, nama: 'Buddi', jabatan: 'bro nya mirra', inisial: 'U' },
 ]
 </script>
 <template>
@@ -20,8 +20,8 @@ const daftarTim = [
    <section class="cerita">
     <div class="teks">
      <h2>Cerita Kami</h2>
-     <p>Onlineshop ini dikelola langsung oleh siswa SMK Yadika Soreang jurusan PPLG, sebagai proyek belajar sekaligus mengembangkan keterampilan membuat dan mengelola perlengkapan sekolah dengan mudah dan harga terjangkau.</p>
-     <p>Setiap produk dipilih dan dikelola oleh tim siswa, mulai dari penentuan bahan, harga, sampai layanan pengambilan di koperasi sekolah. Dengan begitu, kualitas dan harganya tetap terjaga untuk teman-teman semua.</p>
+     <p>Cerita kami belum ada sih jujur</p>
+     <p>JUJUR</p>
     </div>
     <div class="gambar">
      <p>[Foto / ilustrasi toko]</p>
