@@ -32,6 +32,7 @@ onBeforeUnmount(() => {
 })
 </script>
 <template>
+
  <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 p-4">
   <div
    :class="warna"
