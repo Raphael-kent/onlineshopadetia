@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
   <h3 class="mt-2 text-sm font-semibold">{{ nama }}</h3>
   <p class="mt-1 text-xs text-gray-500">Rp {{ harga.toLocaleString('id-ID') }}</p>
   <button
-   class="mt-2 w-full bg-blue-600 hover:bg-blue-700 text-white text-xs py-1 px-3 rounded"
+   class="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white text-xs py-1 px-3 rounded"
    @click="tambahKeKeranjang(nama)"
   >
    Tambah ke Keranjang

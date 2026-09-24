@@ -18,7 +18,7 @@ const daftarTim = [
 
   <div class="container">
    <section class="cerita">
-    <div class="teks text-red-500">
+    <div class="teks text-amber-600">
      <h2>Cerita Kami</h2>
      <p>Cerita kami belum ada sih jujur</p>
      <p>JUJUR</p>
