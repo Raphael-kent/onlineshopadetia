@@ -1,9 +1,22 @@
 <script setup>
-defineProps(['nama', 'jabatan', 'inisial'])
+import { ref } from 'vue'
+
+defineProps(['nama', 'jabatan', 'inisial', 'foto'])
+
+const fotoGagal = ref(false)
 </script>
 <template>
  <div class="team-card">
-  <div class="avatar">{{ inisial }}</div>
+  <div class="avatar">
+   <img
+    v-if="foto && !fotoGagal"
+    :src="foto"
+    :alt="nama"
+    class="h-full w-full object-cover"
+    @error="fotoGagal = true"
+   />
+   <template v-else>{{ inisial }}</template>
+  </div>
   <h3>{{ nama }}</h3>
   <p class="jabatan">{{ jabatan }}</p>
  </div>
@@ -30,6 +43,7 @@ defineProps(['nama', 'jabatan', 'inisial'])
  display: grid;
  place-items: center;
  border-radius: 50%;
+ overflow: hidden;
  background: var(--gradient-hero);
  color: #fff;
  font-size: 1.6rem;

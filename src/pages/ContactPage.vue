@@ -25,21 +25,21 @@ function kirimPesan() {
       <span>📍</span>
       <div>
        <strong>Alamat</strong>
-       <p>Jl.SOREANG NI BOSSS</p>
+       <p>kopo - soreang - aussie</p>
       </div>
      </div>
      <div class="item">
       <span>📞</span>
       <div>
        <strong>Telepon</strong>
-       <p>(+62) 821wkwkwkk</p>
+       <p>(+62)</p>
       </div>
      </div>
      <div class="item">
       <span>✉️</span>
       <div>
        <strong>Email</strong>
-       <p>smk-yadika@soreang.sch.id</p>
+       <p>smk-yadika@soreang.sch.id - raphaelkent@gmail.com</p>
       </div>
      </div>
     </div>

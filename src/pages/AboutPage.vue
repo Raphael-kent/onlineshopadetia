@@ -1,11 +1,15 @@
 <script setup>
+import { ref } from 'vue'
 import TeamCard from '../components/TeamCard.vue'
 
+const fotoToko = ref('/images/Basketball 4 life.jpg')
+const fotoTokoGagal = ref(false)
+
 const daftarTim = [
- { id: 1, nama: 'Mira', jabatan: 'bro nya budi', inisial: 'M' },
- { id: 2, nama: 'Budi', jabatan: 'bro nya mira', inisial: 'B' },
- { id: 3, nama: 'Mirra', jabatan: 'bro nya buddi', inisial: 'I' },
- { id: 4, nama: 'Buddi', jabatan: 'bro nya mirra', inisial: 'U' },
+ { id: 1, nama: 'R', jabatan: '2110', inisial: 'M', foto: '/images/milesgwen.jpg' },
+ { id: 2, nama: 'R', jabatan: '1203', inisial: 'B', foto: '/images/milesgwen.jpg' },
+ { id: 3, nama: 'R', jabatan: '2110', inisial: 'I', foto: '/images/milesgwen.jpg' },
+ { id: 4, nama: 'R', jabatan: '1203', inisial: 'U', foto: '/images/milesgwen.jpg' },
 ]
 </script>
 <template>
@@ -24,7 +28,14 @@ const daftarTim = [
      <p>JUJUR</p>
     </div>
     <div class="gambar">
-     <p>[Foto / ilustrasi toko]</p>
+     <img
+      v-if="fotoToko && !fotoTokoGagal"
+      :src="fotoToko"
+      alt="Foto toko"
+      class="foto-toko"
+      @error="fotoTokoGagal = true"
+     />
+     <p v-else>[Foto / ilustrasi toko]</p>
     </div>
    </section>
 
@@ -37,6 +48,7 @@ const daftarTim = [
       :nama="orang.nama"
       :jabatan="orang.jabatan"
       :inisial="orang.inisial"
+      :foto="orang.foto"
      />
     </div>
    </section>
@@ -69,6 +81,7 @@ const daftarTim = [
 .gambar {
  flex: 1;
  min-height: 300px;
+ position: relative;
  display: grid;
  place-items: center;
  background: var(--bg-soft);
@@ -76,6 +89,14 @@ const daftarTim = [
  border-radius: var(--radius);
  color: var(--text-muted);
  font-weight: 600;
+ overflow: hidden;
+}
+.foto-toko {
+ position: absolute;
+ inset: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
 }
 .tim {
  margin-top: 64px;

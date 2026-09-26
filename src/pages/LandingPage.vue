@@ -1,16 +1,16 @@
 <script setup>
 const fitur = [
- { id: 1, emoji: '✅', judul: 'Kualitas Terjamin', deskripsi: 'Bahan dipilih langsung oleh tim kami.' },
- { id: 2, emoji: '💸', judul: 'Harga Bersahabat', deskripsi: 'Harga ramah di kantong siswa.' },
- { id: 3, emoji: '🏫', judul: 'Ambil di Sekolah', deskripsi: 'Tidak perlu ongkir, ambil di koperasi.' },
+ { id: 1, emoji: '😏', judul: 'kualitas aman lah', deskripsi: 'bahan berkualitas yang terpilih dong' },
+ { id: 2, emoji: '😏', judul: 'harga juga aman lah', deskripsi: 'harga aman di kantong siswa dong' },
+ { id: 3, emoji: '😏', judul: 'payment method juga aman lah', deskripsi: 'payment method aman aja bicarain dong' },
 ]
 </script>
 <template>
  <main class="page landing">
   <section class="hero">
    <div class="container">
-    <h1>Belanja Perlengkapan Sekolah, Gampang &amp; Terpercaya</h1>
-    <p class="subtitle">Dari kaos, topi, sampai tas sekolah &mdash; semua ada di satu tempat.</p>
+    <h1>Belanja Perlengkapan Main, Gampang &amp; Terpercaya</h1>
+    <p class="subtitle">dari aussie sampe kopo ada lengkap &mdash; semua ada di satu tempat.</p>
     <RouterLink to="/product" class="btn-pill">Lihat Produk</RouterLink>
    </div>
   </section>
@@ -35,7 +35,16 @@ const fitur = [
    <div class="container">
     <h2>Video Promo</h2>
     <video controls muted loop autoplay playsinline class="promo">
-     <source src="/video/promo-toko.mp4" type="video/mp4" />
+     <source src="/video/vidja4.mp4" type="video/mp4" />
+     Maaf, browser kamu tidak mendukung video.
+    </video>
+   </div>
+  </section>
+  <section class="video-promo">
+   <div class="container">
+    <h2>Video Promo</h2>
+    <video controls muted loop autoplay playsinline class="promo">
+     <source src="/video/ja3.mp4" type="video/mp4" />
      Maaf, browser kamu tidak mendukung video.
     </video>
    </div>
