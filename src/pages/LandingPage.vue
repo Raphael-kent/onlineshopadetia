@@ -34,7 +34,7 @@ const fitur = [
   <section class="video-promo">
    <div class="container">
     <h2>Video Promo</h2>
-    <video controls muted loop autoplay playsinline class="promo">
+    <video controls muted loop class="promo">
      <source src="/video/vidja4.mp4" type="video/mp4" />
      Maaf, browser kamu tidak mendukung video.
     </video>
@@ -43,7 +43,7 @@ const fitur = [
   <section class="video-promo">
    <div class="container">
     <h2>Video Promo</h2>
-    <video controls muted loop autoplay playsinline class="promo">
+    <video controls muted loop class="promo">
      <source src="/video/ja3.mp4" type="video/mp4" />
      Maaf, browser kamu tidak mendukung video.
     </video>

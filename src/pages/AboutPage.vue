@@ -6,10 +6,10 @@ const fotoToko = ref('/images/Basketball 4 life.jpg')
 const fotoTokoGagal = ref(false)
 
 const daftarTim = [
- { id: 1, nama: 'R', jabatan: '2110', inisial: 'M', foto: '/images/milesgwen.jpg' },
- { id: 2, nama: 'R', jabatan: '1203', inisial: 'B', foto: '/images/milesgwen.jpg' },
- { id: 3, nama: 'R', jabatan: '2110', inisial: 'I', foto: '/images/milesgwen.jpg' },
- { id: 4, nama: 'R', jabatan: '1203', inisial: 'U', foto: '/images/milesgwen.jpg' },
+ { id: 1, nama: 'R', jabatan: '211r', inisial: 'M', foto: '/images/milesgwen.jpg' },
+ { id: 2, nama: 'R', jabatan: '12r3', inisial: 'B', foto: '/images/milesgwen.jpg' },
+ { id: 3, nama: 'R', jabatan: '211r', inisial: 'I', foto: '/images/milesgwen.jpg' },
+ { id: 4, nama: 'R', jabatan: '12r3', inisial: 'U', foto: '/images/milesgwen.jpg' },
 ]
 </script>
 <template>
