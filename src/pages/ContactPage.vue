@@ -25,7 +25,7 @@ function kirimPesan() {
       <span>📍</span>
       <div>
        <strong>Alamat</strong>
-       <p>kopo - soreang - aussie</p>
+       <p>SMK Yadika soreang</p>
       </div>
      </div>
      <div class="item">
@@ -39,7 +39,7 @@ function kirimPesan() {
       <span>✉️</span>
       <div>
        <strong>Email</strong>
-       <p>smk-yadika@soreang.sch.id - raphaelkent@gmail.com</p>
+       <p>smk-yadika@soreang.sch.id </p>
       </div>
      </div>
     </div>

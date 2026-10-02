@@ -6,10 +6,9 @@ const fotoToko = ref('/images/Basketball 4 life.jpg')
 const fotoTokoGagal = ref(false)
 
 const daftarTim = [
- { id: 1, nama: 'R', jabatan: '211r', inisial: 'M', foto: '/images/milesgwen.jpg' },
- { id: 2, nama: 'R', jabatan: '12r3', inisial: 'B', foto: '/images/milesgwen.jpg' },
- { id: 3, nama: 'R', jabatan: '211r', inisial: 'I', foto: '/images/milesgwen.jpg' },
- { id: 4, nama: 'R', jabatan: '12r3', inisial: 'U', foto: '/images/milesgwen.jpg' },
+ { id: 1, nama: 'A', jabatan: 'A', inisial: 'A', foto: '/images/yadika.jpg' },
+ { id: 2, nama: 'B', jabatan: 'B', inisial: 'B', foto: '/images/yadika.jpg' },
+ { id: 3, nama: 'C', jabatan: 'C', inisial: 'C', foto: '/images/yadika.jpg' },
 ]
 </script>
 <template>
@@ -24,8 +23,7 @@ const daftarTim = [
    <section class="cerita">
     <div class="teks text-amber-600">
      <h2>Cerita Kami</h2>
-     <p>Cerita kami belum ada sih jujur</p>
-     <p>JUJUR</p>
+     <p>Sekolah kami merupakan tempat belajar dan berkembang bagi siswa untuk mendapatkan ilmu, mengembangkan potensi, serta membangun karakter yang baik. Kami berkomitmen menciptakan lingkungan belajar yang nyaman, aktif, dan mendukung setiap siswa untuk meraih prestasi dan mempersiapkan masa depan.</p>
     </div>
     <div class="gambar">
      <img

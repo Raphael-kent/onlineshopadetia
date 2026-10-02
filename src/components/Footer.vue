@@ -1,7 +1,7 @@
 <template>
  <footer class="footer">
   <div class="container footer-inner">
-   <p class="muted">&copy; blessing's &mdash; Onlineshop</p>
+   <p class="muted">&copy; SMK Yadika &mdash; Onlineshop</p>
   </div>
  </footer>
 </template>

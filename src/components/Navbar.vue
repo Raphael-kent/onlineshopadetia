@@ -1,7 +1,7 @@
 <template>
  <header class="navbar">
   <div class="container navbar-inner">
-   <RouterLink to="/" class="logo">blessing's <span>&mdash;</span> Onlineshop</RouterLink>
+   <RouterLink to="/" class="logo">SMK Yadika <span>&mdash;</span> Onlineshop</RouterLink>
    <nav class="links">
     <RouterLink to="/" class="link" exact-active-class="aktif">Landing</RouterLink>
     <RouterLink to="/product" class="link" active-class="aktif">Product</RouterLink>
@@ -12,13 +12,14 @@
  </header>
 </template>
 <style scoped>
+
 .navbar {
  position: sticky;
  top: 0;
  z-index: 50;
  background: #fff;
  border-bottom: 1px solid var(--border);
- box-shadow: var(--shadow);
+ box-shadow: var(--sh                             adow);
 }
 .navbar-inner {
  display: flex;
