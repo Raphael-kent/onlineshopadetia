@@ -34,10 +34,10 @@ onBeforeUnmount(() => {
 </script>
 <template>
 
- <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-200 p-4">
+ <div class="rounded-lg border border-krem-300 bg-white p-4">
   <div
    :class="gambar ? '' : warna"
-   class="relative flex h-40 items-center justify-center overflow-hidden rounded-lg text-white text-base font-semibold uppercase cursor-pointer transition-opacity duration-200 hover:opacity-90"
+   class="relative flex h-40 items-center justify-center overflow-hidden rounded-md text-white text-base font-semibold uppercase cursor-pointer"
    @click="bukaZoom"
   >
    <img
@@ -49,37 +49,37 @@ onBeforeUnmount(() => {
    />
    <template v-else>{{ nama }}</template>
   </div>
-  <h3 class="mt-2 text-sm font-semibold">{{ nama }}</h3>
-  <p class="mt-1 text-xs text-gray-500">Rp {{ harga.toLocaleString('id-ID') }}</p>
+  <h3 class="mt-3 text-sm font-semibold">{{ nama }}</h3>
+  <p class="mt-1 text-xs text-sage-700">Rp {{ harga.toLocaleString('id-ID') }}</p>
   <button
-   class="mt-2 w-full bg-amber-600 hover:bg-amber-700 text-white text-xs py-1 px-3 rounded"
+   class="mt-3 w-full rounded-md bg-sage-400 text-white text-xs font-semibold py-2 hover:bg-sage-600"
    @click="tambahKeKeranjang(nama)"
   >
    Tambah ke Keranjang
   </button>
  </div>
 
- <Teleport to="body">
-  <div
-   v-if="zoomTerbuka"
-   class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
-   @click="tutupZoom"
-  >
+  <Teleport to="body">
    <div
-    v-if="gambar && !gambarGagal"
-    class="relative flex aspect-square w-full max-w-md items-center justify-center overflow-hidden rounded-2xl bg-black shadow-2xl"
-    @click.stop
+    v-if="zoomTerbuka"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+    @click="tutupZoom"
    >
-    <img :src="gambar" :alt="nama" class="h-full w-full object-cover" @error="gambarGagal = true" />
+    <div
+     v-if="gambar && !gambarGagal"
+     class="relative flex aspect-square w-full max-w-md items-center justify-center overflow-hidden rounded-lg bg-white"
+     @click.stop
+    >
+     <img :src="gambar" :alt="nama" class="h-full w-full object-cover" @error="gambarGagal = true" />
+    </div>
+    <div
+     v-else
+     :class="warna"
+     class="relative flex aspect-square w-full max-w-md items-center justify-center rounded-lg text-white text-3xl font-bold uppercase"
+     @click.stop
+    >
+     {{ nama }}
+    </div>
    </div>
-   <div
-    v-else
-    :class="warna"
-    class="relative flex aspect-square w-full max-w-md items-center justify-center rounded-2xl text-white text-3xl font-bold uppercase shadow-2xl"
-    @click.stop
-   >
-    {{ nama }}
-   </div>
-  </div>
- </Teleport>
+  </Teleport>
 </template>

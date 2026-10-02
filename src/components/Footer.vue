@@ -9,8 +9,8 @@
 .footer {
   margin-top: auto;
   padding: 28px 0;
-  border-top: 1px solid var(--midnight-deep);
-  background: var(--midnight-deep);
+  border-top: 1px solid var(--border);
+  background: var(--bg-soft);
 }
 .footer-inner {
   display: flex;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 .muted {
-  color: #faf6ef;
+  color: var(--text-muted);
   font-size: 0.92rem;
 }
 </style>

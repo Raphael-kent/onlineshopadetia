@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import TeamCard from '../components/TeamCard.vue'
 
-const fotoToko = ref('/images/Basketball 4 life.jpg')
+const fotoToko = ref('/images/yadika.jpg')
 const fotoTokoGagal = ref(false)
 
 const daftarTim = [
@@ -20,9 +20,9 @@ const daftarTim = [
   </section>
 
   <div class="container">
-   <section class="cerita">
-    <div class="teks text-amber-600">
-     <h2>Cerita Kami</h2>
+    <section class="cerita">
+     <div class="teks">
+      <h2>Cerita Kami</h2>
      <p>Sekolah kami merupakan tempat belajar dan berkembang bagi siswa untuk mendapatkan ilmu, mengembangkan potensi, serta membangun karakter yang baik. Kami berkomitmen menciptakan lingkungan belajar yang nyaman, aktif, dan mendukung setiap siswa untuk meraih prestasi dan mempersiapkan masa depan.</p>
     </div>
     <div class="gambar">
@@ -58,36 +58,37 @@ const daftarTim = [
  padding: 0 0 80px;
 }
 .page-header {
- background: var(--gradient-header);
- color: #fff;
- text-align: center;
- padding: 64px 20px;
+  background: var(--bg-soft);
+  color: var(--text);
+  text-align: center;
+  padding: 48px 20px;
+  border-bottom: 1px solid var(--border);
 }
 .page-header h1 {
- color: #fff;
- font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--text);
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
 }
 .cerita {
- display: flex;
- align-items: center;
- gap: 40px;
- margin-top: 64px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 64px;
 }
 .teks { flex: 1; }
 .teks h2 { margin-bottom: 16px; }
 .teks p { margin-top: 12px; }
 .gambar {
- flex: 1;
- min-height: 300px;
- position: relative;
- display: grid;
- place-items: center;
- background: var(--bg-soft);
- border: 2px dashed var(--border);
- border-radius: var(--radius);
- color: var(--text-muted);
- font-weight: 600;
- overflow: hidden;
+  flex: 1;
+  min-height: 300px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-weight: 600;
+  overflow: hidden;
 }
 .foto-toko {
  position: absolute;

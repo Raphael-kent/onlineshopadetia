@@ -23,36 +23,31 @@ const fotoGagal = ref(false)
 </template>
 <style scoped>
 .team-card {
- flex: 1 1 200px;
- max-width: 240px;
- padding: 28px 20px;
- background: #fff;
- border-radius: var(--radius);
- box-shadow: var(--shadow);
- text-align: center;
- transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.team-card:hover {
- transform: translateY(-4px);
- box-shadow: var(--shadow-hover);
+  flex: 1 1 200px;
+  max-width: 240px;
+  padding: 28px 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
 }
 .avatar {
- width: 84px;
- height: 84px;
- margin: 0 auto 14px;
- display: grid;
- place-items: center;
- border-radius: 50%;
- overflow: hidden;
- background: var(--gradient-hero);
- color: #fff;
- font-size: 1.6rem;
- font-weight: 700;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 14px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 h3 { margin-bottom: 2px; }
 .jabatan {
- color: var(--accent);
- font-weight: 600;
- font-size: 0.92rem;
+  color: var(--accent-dark);
+  font-weight: 600;
+  font-size: 0.92rem;
 }
 </style>

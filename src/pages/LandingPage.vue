@@ -11,7 +11,7 @@ const fitur = [
    <div class="container">
     <h1>Belanja Perlengkapan &amp; Terpercaya</h1>
     <p class="subtitle"> semua perlengkapan sekolah ada  &mdash; seperti tas dan lain lain </p>
-    <RouterLink to="/product" class="btn-pill">Lihat Produk</RouterLink>
+    <RouterLink to="/product" class="btn">Lihat Produk</RouterLink>
    </div>
   </section>
 
@@ -33,7 +33,6 @@ const fitur = [
 
   <section class="video-promo">
    <div class="container">
-    <h2></h2>
     <video controls muted loop class="promo">
      <source src="/video/vid.mp4" type="video/mp4" />
      Maaf, browser kamu tidak mendukung video.
@@ -47,76 +46,67 @@ const fitur = [
  padding: 0;
 }
 .hero {
- background: var(--gradient-hero);
- color: #fff;
- text-align: center;
- padding: 100px 20px;
+  background: var(--bg-soft);
+  color: var(--text);
+  text-align: center;
+  padding: 64px 20px;
+  border-bottom: 1px solid var(--border);
 }
 .hero h1 {
- color: #fff;
- font-size: clamp(1.9rem, 5vw, 3rem);
- max-width: 760px;
- margin: 0 auto 16px;
+  color: var(--text);
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  max-width: 760px;
+  margin: 0 auto 16px;
 }
 .subtitle {
- color: rgba(255, 255, 255, 0.92);
- font-size: clamp(1rem, 2.5vw, 1.2rem);
- max-width: 520px;
- margin: 0 auto 36px;
+  color: var(--text-muted);
+  font-size: clamp(1rem, 2.5vw, 1.15rem);
+  max-width: 520px;
+  margin: 0 auto 32px;
 }
 .fitur {
- padding: 64px 0 80px;
+  padding: 64px 0 80px;
 }
 .cards {
- display: flex;
- gap: 24px;
- flex-wrap: wrap;
- justify-content: center;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .card {
- flex: 1 1 240px;
- max-width: 320px;
- padding: 32px 24px;
- background: #fff;
- border-radius: var(--radius);
- box-shadow: var(--shadow);
- text-align: center;
- transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.card:hover {
- transform: translateY(-4px);
- box-shadow: var(--shadow-hover);
+  flex: 1 1 240px;
+  max-width: 320px;
+  padding: 32px 24px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
 }
 .emoji {
- display: block;
- font-size: 2.4rem;
- margin-bottom: 12px;
+  display: block;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
 }
 .card h3 {
- margin-bottom: 6px;
- font-size: 1.15rem;
+  margin-bottom: 6px;
+  font-size: 1.15rem;
 }
 .card p {
- font-size: 0.95rem;
+  font-size: 0.95rem;
 }
 .video-promo {
- padding: 24px 0 64px;
- text-align: center;
-}
-.video-promo h2 {
- margin-bottom: 20px;
+  padding: 0 0 64px;
 }
 .promo {
- display: block;
- width: 100%;
- max-width: 720px;
- margin: 0 auto;
- border-radius: var(--radius);
- box-shadow: var(--shadow);
- background: #000;
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  background: #000;
 }
 @media (max-width: 640px) {
- .hero { padding: 72px 20px; }
- .fitur { padding: 48px 0 64px; }
+  .hero { padding: 48px 20px; }
+  .fitur { padding: 48px 0 64px; }
 }
 </style>

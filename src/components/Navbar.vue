@@ -14,50 +14,48 @@
 <style scoped>
 
 .navbar {
- position: sticky;
- top: 0;
- z-index: 50;
- background: #fff;
- border-bottom: 1px solid var(--border);
- box-shadow: var(--sh                             adow);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
 }
 .navbar-inner {
- display: flex;
- align-items: center;
- justify-content: space-between;
- gap: 16px;
- height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 64px;
 }
 .logo {
- font-weight: 700;
- font-size: 1.05rem;
- color: var(--text);
- white-space: nowrap;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  white-space: nowrap;
 }
 .logo span {
- color: var(--accent);
+  color: var(--accent-dark);
 }
 .links {
- display: flex;
- gap: 8px;
+  display: flex;
+  gap: 4px;
 }
 .link {
- display: inline-block;
- padding: 8px 14px;
- border-radius: 999px;
- color: var(--text-muted);
- font-weight: 500;
- font-size: 0.95rem;
- transition: background 0.2s ease, color 0.2s ease;
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 .link:hover {
- color: var(--accent);
- background: var(--accent-soft);
+  color: var(--accent-dark);
+  background: var(--accent-soft);
 }
 .link.aktif {
- color: #fff;
- background: var(--accent);
- font-weight: 600;
+  color: var(--accent-dark);
+  background: var(--accent-soft);
+  font-weight: 600;
 }
 @media (max-width: 640px) {
  .navbar-inner {

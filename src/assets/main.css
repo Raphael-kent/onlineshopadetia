@@ -1,21 +1,15 @@
 :root {
-  --bg: #faf6ef;
-  --bg-soft: #f1e9dc;
-  --text: #1f2438;
-  --text-muted: #71778a;
-  --border: #e7ddcb;
-  --accent: #a8762e;
-  --accent-dark: #8a5f1e;
-  --accent-soft: #f6eddd;
-  --purple: #1b2440;
-  --gold: #c9994b;
-  --midnight: #1b2440;
-  --midnight-deep: #121a30;
-  --gradient-hero: linear-gradient(135deg, #1b2440, #c9994b);
-  --gradient-header: linear-gradient(135deg, #121a30, #1b2440);
-  --radius: 14px;
-  --shadow: 0 1px 2px rgba(16, 24, 40, 0.04), 0 8px 24px rgba(16, 24, 40, 0.06);
-  --shadow-hover: 0 4px 8px rgba(16, 24, 40, 0.06), 0 16px 32px rgba(16, 24, 40, 0.1);
+  --bg: #f7f5f0;
+  --bg-soft: #efebe2;
+  --surface: #ffffff;
+  --text: #3d4a43;
+  --text-muted: #7d8a82;
+  --border: #e3ded2;
+  --accent: #8fae9b;
+  --accent-dark: #73947f;
+  --accent-soft: #e9f0eb;
+  --radius: 8px;
+  --shadow: 0 1px 2px rgba(61, 74, 67, 0.05);
   --font:
     Inter,
     -apple-system,
@@ -74,14 +68,12 @@ main.page {
 h1 {
   font-size: clamp(1.7rem, 4vw, 2.4rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
   margin-bottom: 12px;
 }
 
 h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  letter-spacing: -0.01em;
 }
 
 p {
@@ -103,72 +95,32 @@ img {
 }
 
 .btn {
- display: inline-flex;
- align-items: center;
- gap: 8px;
- padding: 10px 22px;
- border: none;
- border-radius: 8px;
- background: var(--accent);
- color: #fff;
- font-family: inherit;
- font-size: 0.95rem;
- font-weight: 600;
- cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .btn:hover {
- background: var(--accent-dark);
+  background: var(--accent-dark);
+  border-color: var(--accent-dark);
 }
 
 .btn:active {
- transform: translateY(1px);
+  transform: translateY(1px);
 }
 
-/* Tombol pill putih (Hero landing) */
-.btn-pill {
- display: inline-block;
- padding: 14px 36px;
- border-radius: 999px;
- background: #fff;
- color: var(--accent);
- font-family: inherit;
- font-size: 1rem;
- font-weight: 700;
- cursor: pointer;
- box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
- transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.btn-pill:hover {
- color: var(--purple);
- transform: translateY(-2px);
- box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+/* Tombol lebar penuh (form contact) */
+.btn-block {
+  width: 100%;
+  justify-content: center;
 }
 
-/* Tombol pill solid (Form contact) */
-.btn-pill-solid {
- display: inline-block;
- padding: 12px 32px;
- border: none;
- border-radius: 999px;
- background: var(--gradient-hero);
- color: #fff;
- font-family: inherit;
- font-size: 1rem;
- font-weight: 700;
- cursor: pointer;
- transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.btn-pill-solid:hover {
- transform: translateY(-2px);
- box-shadow: 0 10px 24px rgba(201, 153, 75, 0.4);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    transition: none !important;
-  }
-}
